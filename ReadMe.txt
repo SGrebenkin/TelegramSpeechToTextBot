@@ -14,6 +14,11 @@ SOX normalizes the volume.
 In order to compile, you need to create config.h file in the root directory of the project and put the following line there:
 const std::string BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
 
+The bot has been tested on NVidia GeForce RTX 4070Ti 12 Gb + Core i7 14400 / 16 Gb DDR.
+Additional changes:
+* Flash Attention v2 library has been built from sources and installed as a python library to speed-up inference.
+* Torch 2.4.1+cu124 version has been used.
+
 ToDo:
 - Add description of the solution
 - Refactor to look better in terms of OOAD
