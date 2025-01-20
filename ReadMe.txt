@@ -11,6 +11,9 @@ To use the bot, you need to install the following separate software applications
 FFMpeg converts ogg to wav.
 SOX normalizes the volume.
 
+In order to compile, you need to create config.h file in the root directory of the project and put the following line there:
+const std::string BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
+
 ToDo:
 - Add description of the solution
 - Refactor to look better in terms of OOAD
