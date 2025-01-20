@@ -1,3 +1,16 @@
+This is the bot that is able to convert the wav files, voices sent by the user in telegram, to human readable text.
+
+The bot consists of two parts:
+* C++ part that is actually bot, polls telegram and reponds with the resulting message
+* ML part, that is actually a model from hugging face
+
+To use the bot, you need to install the following separate software applications, that are necessary for wav file preparation:
+* ffmpeg https://www.ffmpeg.org/
+* sox https://sourceforge.net/projects/sox/
+
+FFMpeg converts ogg to wav.
+SOX normalizes the volume.
+
 ToDo:
 - Add description of the solution
 - Refactor to look better in terms of OOAD
