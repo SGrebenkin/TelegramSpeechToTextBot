@@ -1,0 +1,8 @@
+# Use a pipeline as a high-level helper
+from transformers import pipeline
+
+pipe = pipeline("automatic-speech-recognition", model="jonatasgrosman/wav2vec2-xls-r-1b-russian")     Copy  # Load model directly
+from transformers import AutoProcessor, AutoModelForCTC
+
+processor = AutoProcessor.from_pretrained("jonatasgrosman/wav2vec2-xls-r-1b-russian")
+model = AutoModelForCTC.from_pretrained("jonatasgrosman/wav2vec2-xls-r-1b-russian")

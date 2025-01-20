@@ -1,0 +1,9 @@
+fastapi==0.115.6
+numpy==2.2.2
+pydantic==2.10.5
+pydub==0.25.1
+scipy==1.15.1
+soundfile==0.12.1
+torch==2.4.1+cu124
+transformers==4.44.2
+uvicorn==0.34.0
